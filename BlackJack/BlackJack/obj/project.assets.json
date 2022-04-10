@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BlackJack Project\\BlackJack\\BlackJack\\BlackJack\\BlackJack.csproj",
+      "projectUniqueName": "C:\\Users\\Samishko\\Documents\\GitHub\\BlackJack\\BlackJack\\BlackJack\\BlackJack.csproj",
       "projectName": "BlackJack",
-      "projectPath": "D:\\BlackJack Project\\BlackJack\\BlackJack\\BlackJack\\BlackJack.csproj",
+      "projectPath": "C:\\Users\\Samishko\\Documents\\GitHub\\BlackJack\\BlackJack\\BlackJack\\BlackJack.csproj",
       "packagesPath": "C:\\Users\\Samishko\\.nuget\\packages\\",
-      "outputPath": "D:\\BlackJack Project\\BlackJack\\BlackJack\\BlackJack\\obj\\",
+      "outputPath": "C:\\Users\\Samishko\\Documents\\GitHub\\BlackJack\\BlackJack\\BlackJack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Samishko\\AppData\\Roaming\\NuGet\\NuGet.Config",

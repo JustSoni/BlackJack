@@ -63,13 +63,16 @@ namespace BlackJack
                 {
                     Messages.NextMove();
                     move = Console.ReadLine();
-                    while (!(move == "Hit" || move == "Stand" || move == "Double"))
+                    move = move.ToLower();
+                    while (!(move == "hit" || move == "stand" || move == "double"))
                     {
                         Console.WriteLine("Wrong option, try again -> ");
                         move = Console.ReadLine();
                     }
 
-                    if (move == "Hit")
+                    move = move.ToLower();
+
+                    if (move == "hit")
                     {
                         Thread.Sleep(1000);
                         Messages.Dealing();
@@ -77,16 +80,18 @@ namespace BlackJack
                         playerHand.Add(deck.DealStackCard());
                         Thread.Sleep(1000);
                     }
-                    else if (move == "Stand")
+                    else if (move == "stand")
                     {
                         break;
                     }
-                    //else(move=="Double")
-                    //{
-                    //    bet += bet;
-                    //    Messages.Dealing();
-                    //    playerHand.Add(deck.DealStackCard());
-                    //}
+                    else if (move == "double") // TODO :: Add Double
+                    {
+                        bet += bet;
+                        Console.WriteLine(bet);
+                        Messages.Dealing();
+                        playerHand.Add(deck.DealStackCard());
+                        break;
+                    }
 
                     Messages.ShowCards(playerHand, true); // True -> Player
                     Messages.ShowCards(dealerHand, false); // False -> Dealer
@@ -167,7 +172,6 @@ namespace BlackJack
 
                         Console.WriteLine();
                     }
-
 
 
                 }
