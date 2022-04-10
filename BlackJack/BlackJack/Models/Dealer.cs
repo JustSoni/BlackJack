@@ -11,9 +11,9 @@ namespace BlackJack.Models
         {
             Console.WriteLine("In DEALER class");
 
-            string move = "";
+            string move;
 
-            int win = 0;
+            int win;
             bool doubleTrigger = false;
             int initialBet = bet;
 
