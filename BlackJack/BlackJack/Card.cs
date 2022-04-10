@@ -33,46 +33,6 @@ namespace BlackJack
             }
         }
 
-        public Card(string input)
-        {
-            string tempValue = "";
-            string suitSentence = "";
-            switch (Value)
-            {
-                case 11:
-                    tempValue = "Jack";
-                    break;
-                case 12:
-                    tempValue = "Queen";
-                    break;
-                case 13:
-                    tempValue = "King";
-                    break;
-                case 14:
-                    tempValue = "Ace";
-                    break;
-                default:
-                    tempValue = Value.ToString();
-                    break;
-            }
-            switch (Suit)
-            {
-                case "Hearts":
-                    suitSentence = " of Hearts";
-                    break;
-                case "Diamonds":
-                    suitSentence = " of Diamonds";
-                    break;
-                case "Clubs":
-                    suitSentence = " of Clubs";
-                    break;
-                case "Spades":
-                    suitSentence = " of Spades";
-                    break;
-            }
-            input = tempValue + suitSentence;
-        }
-
         public override string ToString()
         {
             string tempValue = "";

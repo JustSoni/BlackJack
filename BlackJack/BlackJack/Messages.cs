@@ -138,7 +138,7 @@ namespace BlackJack
                 }
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine($"Score = {hand.Select(x => x.Power).Sum()}");
+                Console.WriteLine($"Score = {HandCalculator.Calculate(hand)}");
                 Console.ResetColor();
                 Console.WriteLine("________________");
             }
@@ -156,7 +156,7 @@ namespace BlackJack
                 }
 
                 Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine($"Score = {hand.Select(x => x.Power).Sum()}");
+                Console.WriteLine($"Score = {HandCalculator.Calculate(hand)}");
                 Console.ResetColor();
 
                 Console.WriteLine("________________");

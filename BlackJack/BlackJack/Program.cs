@@ -9,14 +9,10 @@ namespace BlackJack
     {
         static void Main(string[] args)
         {
-            //Deck.FillDeck();
-            //Deck.PrintDeck();
-
             Deck deck = new Deck();
 
             deck.ShuffleDeck();
 
-            //Console.WriteLine(deck.Count);
 
             int chips = 0;
             int bet = 0;
@@ -30,6 +26,16 @@ namespace BlackJack
 
             while (true)
             {
+                if (deck.Count < 10) // Reshuffling a deck if there are less than 10 cards remaining
+                {
+                    Thread.Sleep(1000);
+                    Console.WriteLine("---------------------------------------------------");
+                    Console.WriteLine("RESHUFFLING!");
+                    Console.WriteLine("---------------------------------------------------");
+                    Thread.Sleep(1000);
+                    deck.FillStackDeck(); // Reshuffle a deck.
+                }
+
                 Console.WriteLine($"Remaining chips = {chips}");
                 List<Card> playerHand = new List<Card>();
                 List<Card> dealerHand = new List<Card>();
@@ -53,7 +59,7 @@ namespace BlackJack
                 Messages.ShowCards(playerHand, true); // True -> Player
                 Messages.ShowCards(dealerHand, false); // False -> Dealer
 
-                while (playerHand.Select(x => x.Power).Sum() < 21) // Player's turn
+                while (HandCalculator.Calculate(playerHand) < 21) // Player's turn
                 {
                     Messages.NextMove();
                     move = Console.ReadLine();
@@ -65,8 +71,11 @@ namespace BlackJack
 
                     if (move == "Hit")
                     {
+                        Thread.Sleep(1000);
                         Messages.Dealing();
+                        Thread.Sleep(1000);
                         playerHand.Add(deck.DealStackCard());
+                        Thread.Sleep(1000);
                     }
                     else if (move == "Stand")
                     {
@@ -83,11 +92,11 @@ namespace BlackJack
                     Messages.ShowCards(dealerHand, false); // False -> Dealer
                 }
 
-                if (playerHand.Select(x => x.Power).Sum() > 21)
+                if (HandCalculator.Calculate(playerHand) > 21)
                 {
                     Messages.Busted();
                 }
-                else if (playerHand.Select(x => x.Power).Sum() == 21 && playerHand.Count == 2)
+                else if (HandCalculator.Calculate(playerHand) == 21 && playerHand.Count == 2)
                 {
                     Messages.Dealing();
                     Thread.Sleep(1000);
@@ -99,7 +108,7 @@ namespace BlackJack
 
                     Thread.Sleep(1000);
 
-                    if (dealerHand.Select(x => x.Power).Sum() < 21)
+                    if (HandCalculator.Calculate(dealerHand) < 21)
                     {
                         Messages.WinBlackjack(bet);
                         chips += (int)(bet * 2.5);
@@ -119,13 +128,13 @@ namespace BlackJack
                     Thread.Sleep(1000);
                     dealerHand.Add(deck.DealStackCard());
                     Thread.Sleep(1000);
-                    while (dealerHand.Select(x => x.Power).Sum() < 17)
+                    while (HandCalculator.Calculate(dealerHand) < 17)
                     {
                         dealerHand.Add(deck.DealStackCard());
                         Thread.Sleep(1000);
                     }
 
-                    if (dealerHand.Select(x => x.Power).Sum() < playerHand.Select(x => x.Power).Sum() || dealerHand.Select(x => x.Power).Sum()>21)
+                    if (HandCalculator.Calculate(dealerHand) < HandCalculator.Calculate(playerHand) || HandCalculator.Calculate(dealerHand) > 21)
                     {
                         Messages.ShowCards(playerHand, true); // True -> Player
                         Messages.ShowCards(dealerHand, false); // False -> Dealer
@@ -139,7 +148,7 @@ namespace BlackJack
                         //Console.ResetColor();
                         chips += bet * 2;
                     }
-                    else if (dealerHand.Select(x => x.Power).Sum() == playerHand.Select(x => x.Power).Sum())
+                    else if (HandCalculator.Calculate(dealerHand) == HandCalculator.Calculate(playerHand))
                     {
                         Messages.ShowCards(playerHand, true); // True -> Player
                         Messages.ShowCards(dealerHand, false); // False -> Dealer

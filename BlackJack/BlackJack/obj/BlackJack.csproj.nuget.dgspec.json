@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Informatics\\C#\\BlackJack\\BlackJack\\BlackJack.csproj": {}
+    "D:\\BlackJack Project\\BlackJack\\BlackJack\\BlackJack\\BlackJack.csproj": {}
   },
   "projects": {
-    "D:\\Informatics\\C#\\BlackJack\\BlackJack\\BlackJack.csproj": {
+    "D:\\BlackJack Project\\BlackJack\\BlackJack\\BlackJack\\BlackJack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Informatics\\C#\\BlackJack\\BlackJack\\BlackJack.csproj",
+        "projectUniqueName": "D:\\BlackJack Project\\BlackJack\\BlackJack\\BlackJack\\BlackJack.csproj",
         "projectName": "BlackJack",
-        "projectPath": "D:\\Informatics\\C#\\BlackJack\\BlackJack\\BlackJack.csproj",
-        "packagesPath": "C:\\Users\\10\\.nuget\\packages\\",
-        "outputPath": "D:\\Informatics\\C#\\BlackJack\\BlackJack\\obj\\",
+        "projectPath": "D:\\BlackJack Project\\BlackJack\\BlackJack\\BlackJack\\BlackJack.csproj",
+        "packagesPath": "C:\\Users\\Samishko\\.nuget\\packages\\",
+        "outputPath": "D:\\BlackJack Project\\BlackJack\\BlackJack\\BlackJack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Samishko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

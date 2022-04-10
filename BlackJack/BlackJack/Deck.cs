@@ -121,15 +121,6 @@ namespace BlackJack
             }
         }
 
-        /*
-        public  void PrintDeck()//
-        {
-            for (int i = 0; i < 52; i++)
-            {
-                Console.WriteLine($"{deck[i].Value} of {deck[i].Suit}");
-            }
-        }
-        */
         public Card DealStackCard()
         {
             Card dealtCard = stackDeck.Pop();

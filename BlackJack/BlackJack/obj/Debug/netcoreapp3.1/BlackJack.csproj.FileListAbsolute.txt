@@ -11,3 +11,17 @@ D:\Informatics\C#\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.csproj.C
 D:\Informatics\C#\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.dll
 D:\Informatics\C#\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.pdb
 D:\Informatics\C#\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.genruntimeconfig.cache
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\bin\Debug\netcoreapp3.1\BlackJack.exe
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\bin\Debug\netcoreapp3.1\BlackJack.deps.json
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\bin\Debug\netcoreapp3.1\BlackJack.runtimeconfig.json
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\bin\Debug\netcoreapp3.1\BlackJack.runtimeconfig.dev.json
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\bin\Debug\netcoreapp3.1\BlackJack.dll
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\bin\Debug\netcoreapp3.1\BlackJack.pdb
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.csproj.AssemblyReference.cache
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.GeneratedMSBuildEditorConfig.editorconfig
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.AssemblyInfoInputs.cache
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.AssemblyInfo.cs
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.csproj.CoreCompileInputs.cache
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.dll
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.pdb
+D:\BlackJack Project\BlackJack\BlackJack\BlackJack\obj\Debug\netcoreapp3.1\BlackJack.genruntimeconfig.cache
