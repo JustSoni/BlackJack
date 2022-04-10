@@ -14,6 +14,8 @@ namespace BlackJack.Models
             string move = "";
 
             int win = 0;
+            bool doubleTrigger = false;
+            int initialBet = bet;
 
             List<Card> playerHand = new List<Card>();
             List<Card> dealerHand = new List<Card>();
@@ -53,7 +55,8 @@ namespace BlackJack.Models
                 }
                 else if (move == "double") // TODO :: Add Double
                 {
-                    bet += bet;
+                    doubleTrigger = true;
+                       bet += bet;
                     Console.WriteLine($"Doubling your bet! Your bet now is -> {bet}");
                     Messages.Dealing();
                     playerHand.Add(deck.DealStackCard());
@@ -143,6 +146,10 @@ namespace BlackJack.Models
 
             }
 
+            if(doubleTrigger)
+            {
+                win -= initialBet;
+            }
             return win;
         }
 

@@ -23,7 +23,7 @@ namespace BlackJack
 
             while (chips > 0)
             {
-                if (deck.Count < 47) // Reshuffling a deck if there are less than 10 cards remaining
+                if (deck.Count < 15) // Reshuffling a deck if there are less than 10 cards remaining
                 {
                     Dealer.Reshuffle(deck);
                 }
