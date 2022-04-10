@@ -8,7 +8,7 @@ namespace BlackJack
 {
     public static class Messages
     {
-        public static void DisplayOptions()
+        public static void DisplayBet()
         {
             Console.WriteLine("Dealer: Place your bets sir!");
             Console.Write("Bet -> ");
